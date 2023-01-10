@@ -59,15 +59,15 @@
     width: 30%;
   }
   @media (max-width: $breakpoint768) {
-    top: 0;
+    top: 48px;
     right: 0;
   }
   @media (max-width: $breakpoint480) {
-    top: -25px;
+    top: -25 + 48 + px;
     right: 0;
   }
   @media (max-width: 365px) {
-    top: -40px;
+    top: -40 + 40 + px;
     right: 0;
   }
 }
@@ -86,11 +86,101 @@
 .hero_img {
   width: 632px;
   position: relative;
-  z-index: 5;
+  z-index: 1;
   @media (max-width: $breakpoint1200) {
+    margin-top: 48px;
     width: 70%;
   }
   @media (max-width: $breakpoint768) {
     width: 100%;
   }
+}
+
+// Materials
+.container {
+}
+.section_materials {
+  padding: 151px 0;
+  @media (max-width: $breakpoint992) {
+    padding: 20px 0;
+  }
+}
+.materials {
+  display: flex;
+  gap: 114px;
+  @media (max-width: $breakpoint1200) {
+    gap: 0;
+    justify-content: space-between;
+  }
+  @media (max-width: $breakpoint992) {
+    flex-direction: column;
+  }
+}
+.materials_item {
+  text-align: center;
+}
+.materials_item_left {
+  flex: 0 1 228px;
+}
+.materials_item_right {
+  display: flex;
+  gap: 79px;
+  @media (max-width: $breakpoint1200) {
+    gap: 32px;
+  }
+  @media (max-width: $breakpoint992) {
+    flex-direction: column;
+  }
+}
+.materials_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  color: #2f2f2f;
+  margin-bottom: 27px;
+}
+.materials_p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  margin-bottom: 33px;
+  color: #6a6a6a;
+}
+.materials_item h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #2f2f2f;
+}
+.materials_item p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #2f2f2f;
+}
+.material_img {
+  display: inline-block;
+  height: 256px;
+  margin-bottom: 46px;
+  text-align: center;
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 12px;
+    height: auto;
+    width: 60%;
+  }
+}
+.btn {
+}
+.btn_section {
 }

@@ -66,6 +66,11 @@
   &.btn_section {
     background: #2f2f2f;
     color: white;
+    transition: all 0.3s;
+    &:hover {
+      transition: all 0.3s;
+      background: lighten($color: #2f2f2f, $amount: 20);
+    }
   }
 }
 
