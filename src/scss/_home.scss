@@ -1,4 +1,9 @@
 //
+
+body {
+  background: #eff2f1;
+}
+
 .section_hero {
   background-color: $mainColor;
   padding-top: 98px;
@@ -657,6 +662,9 @@
 .blog_section {
   margin-top: 41px;
   margin-bottom: 159px;
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 84px;
+  }
 }
 .container {
 }
@@ -738,4 +746,69 @@
   font-size: 14px;
   line-height: 17px;
   color: #2f2f2f;
+}
+
+.subscribe_section {
+  background-color: #fff;
+}
+.container {
+}
+.subscribe {
+  padding-bottom: 139px;
+  padding-top: 97px;
+  @media (max-width: $breakpoint992) {
+    padding-top: 150px;
+  }
+  @media (max-width: $breakpoint480) {
+    padding-top: 36px;
+  }
+}
+
+.realtive_container {
+  position: relative;
+}
+.subscribe img {
+  position: absolute;
+  top: -87px;
+  right: 0;
+  @media (max-width: $breakpoint992) {
+    width: 40%;
+    top: -66px;
+  }
+}
+.subscribe_title svg {
+  margin-right: 12px;
+}
+
+.subscribe_title {
+  display: flex;
+  margin-bottom: 24px;
+}
+.subscribe_title h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2f2f2f;
+}
+.form input {
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 15px 22px;
+}
+
+.form label {
+  display: flex;
+  gap: 15px;
+  @media (max-width: $breakpoint992) {
+    flex-direction: column;
+  }
+}
+.form label button {
+  background: #35736e;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
 }
