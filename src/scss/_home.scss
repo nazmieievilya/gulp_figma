@@ -189,9 +189,9 @@
   margin-bottom: 46px;
   text-align: center;
   @media (max-width: $breakpoint992) {
-    margin-bottom: 12px;
     height: auto;
-    width: 60%;
+    margin-bottom: -1px;
+    width: 46%;
   }
 }
 
@@ -444,6 +444,9 @@
 
 .products_section {
   margin-bottom: 95px;
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 0;
+  }
 }
 .products {
   display: flex;
@@ -506,5 +509,233 @@
   font-size: 12px;
   line-height: 22px;
   background: none;
+  cursor: pointer;
   color: #6a6a6a;
+  transition: all 0.3s;
+  &:hover {
+    transition: all 0.3s;
+    color: #000;
+  }
+}
+
+.testimonials_section {
+  padding: 45px 0;
+}
+.container {
+}
+.section_title {
+}
+.text_center {
+}
+.swiper {
+}
+.swiper_testimonials {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+.swiper-wrapper {
+  padding-bottom: 40px;
+}
+.swiper-slide {
+}
+.testimonials_slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  @media (max-width: $breakpoint992) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.testimonials_avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 42px;
+}
+.testimonials_name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 12px;
+  color: #000000;
+}
+.testomonials_position {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  margin-top: 4px;
+  text-align: center;
+
+  color: #2f2f2f;
+}
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background: #ababab;
+    &.swiper-pagination-bullet-active {
+      background: #385d50;
+    }
+  }
+}
+
+.slider_btn {
+  position: absolute;
+}
+.slider {
+  &_wraper {
+    position: relative;
+  }
+  &_btn {
+    text-align: center;
+    z-index: 5;
+    top: 50%;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #385d50;
+    transition: all 0.3s;
+    @media (max-width: $breakpoint992) {
+      opacity: 0.8;
+      width: 40px;
+      height: 40px;
+    }
+    .slider_btn_path {
+      stroke: #fff;
+    }
+
+    &.swiper-button-disabled {
+      background: rgba(196, 196, 196, 0.1);
+      .slider_btn_path {
+        stroke: #000;
+      }
+    }
+    &_next {
+      right: 0;
+      top: 30px;
+      @media (max-width: $breakpoint992) {
+        top: unset;
+        bottom: 190px;
+      }
+      svg {
+        margin-left: 2px;
+      }
+    }
+    &_prev {
+      top: 30px;
+      left: 0;
+      @media (max-width: $breakpoint992) {
+        top: unset;
+        bottom: 190px;
+      }
+      svg {
+        margin-right: 2px;
+      }
+    }
+  }
+}
+.slider_btn svg {
+  margin-top: 4px;
+}
+
+.blog_section {
+  margin-top: 41px;
+  margin-bottom: 159px;
+}
+.container {
+}
+.blog_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.blog_title h2 {
+  margin-bottom: 0;
+}
+.section_title {
+}
+.posts_link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #2f2f2f;
+  transition: all 0.3s;
+  border-bottom: 3px solid #000000;
+  &:hover {
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+  }
+}
+.blog {
+  display: flex;
+  gap: 30px;
+  @media (max-width: $breakpoint1200) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.blog_item {
+  @media (max-width: $breakpoint768) {
+    width: 90%;
+  }
+  @media (max-width: $breakpoint480) {
+    width: 100%;
+  }
+}
+.blog_item img {
+  border-radius: 10px;
+  margin-bottom: 44px;
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}
+.post_title {
+  margin-bottom: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2f2f2f;
+  @media (max-width: $breakpoint768) {
+    line-height: 1.1;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+.post_description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2f2f2f;
+}
+.post_description span {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2f2f2f;
 }
