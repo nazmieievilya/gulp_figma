@@ -940,6 +940,97 @@ body {
   height: 50px;
 }
 
+footer {
+  background-color: #fff;
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+
+.footer_logo {
+  display: block;
+  margin-bottom: 19px;
+}
+
+.text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 65px;
+  margin-bottom: 60px;
+}
+
+.footer_text {
+  width: 360px;
+}
+
+.footer_columns {
+  gap: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_social_networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 11px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #eff2f1;
+}
+
+.footer_social_networks a {
+  width: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  height: 41px;
+}
+
+.footer_item ul li a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #6a6a6a;
+}
+
+.footer_copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 36px;
+  padding-bottom: 93px;
+}
+
+.footer_copyright div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 42px;
+}
+
 /**
  * Swiper 7.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2044,6 +2135,44 @@ button.swiper-pagination-bullet {
     font-size: 20px;
     margin-bottom: 0;
   }
+
+  footer {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .text_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer_text {
+    width: 100%;
+  }
+
+  .footer_columns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+
+  .footer_social_networks {
+    padding-bottom: 18px;
+  }
+
+  .footer_item ul li a {
+    font-size: 11px;
+    line-height: 2;
+  }
+
+  .footer_copyright {
+    margin-top: 18px;
+    padding-bottom: 32px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -2227,6 +2356,13 @@ button.swiper-pagination-bullet {
 
   .subscribe {
     padding-top: 36px;
+  }
+
+  .footer_columns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
   }
 }
 
